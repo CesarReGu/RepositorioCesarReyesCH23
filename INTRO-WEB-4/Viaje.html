@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./TablasyAnclas.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Input de tipo SELECT-->
+    <label for="destino">Destino:</label>
+    <select id="destino" name="destino">
+      <option value="sinaloa">Sinaloa</option>
+      <option value="cdmx">Ciudad de México</option>
+      <option value="guadalajara">Guadalajara</option>
+      <option value="monterrey">Monterrey</option>
+      <option value="yucatan">Yucatán</option>
+    </select>
+    <!-- Input de tipo LABEL-->
+    <br>
+    <br>
+    <label for="maletas">Número de maletas:</label>
+    <br>
+    <br>
+    <div id="maletas">
+      <input type="radio" id="zero" name="maletas" value="0">
+      <label for="zero">0</label>
+      <input type="radio" id="one" name="maletas" value="1">
+      <label for="one">1</label>
+      <input type="radio" id="two" name="maletas" value="2">
+      <label for="two">2</label>
+      <input type="radio" id="more_than_three" name="maletas" value="+3">
+      <label for="more_than_three">+3</label>
+    </div>
+    <!--Input para obtener la fecha-->
+    <br>
+    <label for="CuandoVuelas">Fecha del vuelo:</label>
+    <br>
+    <br>
+<input type="date" id="CuandoVuelas" name="CuandoVuelas">
+<!-- Input tipo checkbox-->
+<br>
+<br>
+<label>Servicios adicionales:</label><br>
+<br>
+  <input type="checkbox" id="rent_a_car" name="rent_a_car" value="rent_a_car">
+  <label for="rent_a_car">Rentar un coche</label><br>
+  <input type="checkbox" id="hotel" name="hotel" value="hotel">
+  <label for="hotel">Hotel</label><br>
+  <input type="checkbox" id="tour" name="tour" value="tour">
+  <label for="tour">Tour</label>
+  <br>
+  <br>
+  <label for="CuantoGastas">Presupuesto</label>
+  <input type="range" id="CuantoGastas" name="CuantoGastas" min="0" max="2" step="1">
+  <div id="time_range">
+    <span id="night">1500</span>
+    <span id="afternoon">2500</span>
+    <span id="morning">+5000</span>
+  </div>
+  
+
+</body>
+</html>
