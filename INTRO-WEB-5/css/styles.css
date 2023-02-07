@@ -1,59 +1,257 @@
+/*El bloque body establece las propiedades de fuente, color y fondo para todo el contenido de la página. */ 
 body{
+    /** Establece la familia de fuentes */
     font-family: 'Open sans', 'Arial', 'Tahoma';
+    /** Establece el grosor de la fuente */
     font-weight: 400;
+    /** Establece el tamaño de la fuente */
     font-size: 14px;
+    /** Establece el color del texto */
     color: #363636;
-    background: #ededed;}
+    /** Establece el color de fondo */
+    background: #ededed; }
 
     /* HEADER */ 
+/*El bloque h1 define el estilo para los encabezados h1 con una transformación a mayúsculas y un color específico para un elemento dentro del encabezado span.*/
+h1{
+    /** Convierte el texto a mayúsculas */
+    text-transform: uppercase;
+}
 
-    h1{
-        text-transform: uppercase;
+h1 span{
+    /** Establece el color del texto */
+    color: #f0563d;
+}
+
+/*El bloque #photo-header define el estilo para un elemento con un ID específico y contiene un borde doble de color y ancho específicos.*/
+#photo-header{
+    /** Alinea el texto al centro */
+    text-align: center;
+    /** Establece el color del borde inferior */
+    border-bottom-color: #353434;
+    /** Establece el ancho del borde inferior */
+    border-bottom-width: 5px;
+    /** Establece el estilo del borde inferior */
+    border-bottom-style: double;
+}
+
+/*El bloque #photo img define el estilo para una imagen dentro del elemento con el ID photo-header, incluido un fondo y tamaño con un borde redondeado.*/
+#photo img{
+    /** Establece el color de fondo */
+    background-color: #3f43aa; 
+    /** Establece el ancho */
+    width:  120px;
+    /** Establece la altura */
+    height: 120px;
+    /** Hace un borde redondeado */
+    border-radius: 50%;       
+}
+
+/*El bloque .container define un contenedor con un ancho máximo y un margen específico para centrar el contenido en la página.*/
+.container{
+    /** Establece el ancho máximo */
+    max-width: 800px;
+    /** Establece el color de fondo */
+    background: #ffffff;
+    /** Establece el margen superior */
+    margin-top: 80px;
+    /** Alinea automáticamente a la izquierda */
+    margin-left: auto;
+    /** Alinea automáticamente a la derecha */
+    margin-right: auto;
+    /** Establece el margen inferior */
+    margin-bottom: 30px;
+}
+
+/*El bloque .menu ul define el estilo para una lista sin orden dentro del elemento con la clase menu.*/
+.menu ul{
+    /** Alinea el texto al centro */
+    text-align: center;
+    /** Alinea al centro */
+    margin: auto; 
+    /** Establece el margen interior a 0% */
+    padding: 0%;
+    /** Quita los puntos de lista */
+    list-style-type: none;
+}
+
+/*El bloque .menu ul li define el estilo para los elementos de lista dentro de la lista sin orden y establece su posición.*/
+.menu ul li{
+    /** Muestra los elementos como bloques en línea */
+    display: inline-block;
+    /** Establece la posición relativa */
+    position: relative;
+}
+
+/*El bloque .menu ul li a define el estilo para los enlaces dentro de los elementos de lista.*/    
+.menu ul li a{
+    /** Establece el color de fondo */
+    background: #363636;
+    /** Establece el color del texto */
+    color: #ffffff;
+    /** Establece el tamaño de la fuente */
+    font-size: 10px;
+    /** Quita la decoración de texto */
+    text-decoration: none;
+    display: block;
+    padding: 3px;
+}
+
+
+/*El bloque .menu ul li ul define el estilo para una sublista dentro de los elementos de lista, incluido su posición y visualización.*/
+
+.menu ul li ul {
+    /* Establece la posición absoluta para la sublista */
+    position: absolute;
+    /* Establece la distancia desde la parte superior del elemento padre */
+    top: 25px;
+    /* Establece la distancia desde la izquierda del elemento padre */
+    left: 0;
+    /* Elimina los puntos antes de cada elemento de la lista */
+    list-style-type: none;
+    /* Oculta la sublista por defecto */
+    display: none;
+    /* Establece la altura como automática para adaptarse a los elementos de la lista */
+    height: auto;
+}
+
+/*El bloque .menu ul li:hover ul define la visualización de la sublista cuando se hace hover sobre los elementos de lista.*/
+    
+.menu ul li:hover ul {
+    /* Muestra la sublista cuando se hace hover sobre el elemento padre */
+    display: block;
+}
+
+/*El bloque .menu ul li ul li define el estilo para los elementos de la sublista, incluido su tamaño y alineación.*/
+.menu ul li ul li {
+    /* Muestra cada elemento de la sublista como un bloque */
+    display: block;
+    /* Establece el ancho de cada elemento de la sublista */
+    width: 60px;
+    /* Establece la altura de cada elemento de la sublista */
+    height: 20px;
+    /* Elimina el margen por defecto */
+    margin: 0;
+    /* Alinea el texto a la izquierda */
+    text-align: left;
+}
+
+h2{
+    color: #f0563d;
+    text-transform: uppercase;
+}
+
+h2::before{
+    content:"//  ";
+}
+
+.clearfix:before{
+    display: table;
+    line-height: 1;
+    content: "";
+
+}
+
+.pull-left{
+    float: left;
+}
+
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-60{
+    width: 60%;
+}
+
+.col-90{
+    width: 90%;
+}
+
+.col-80{
+    width: 80%;
+}
+
+.col-20{
+    width: 20%;
+}
+
+.col-10{
+    width: 10%;
+}
+
+.containerflex{
+    display: flex;
+}
+
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+    .education .year {
+        font-size: 1.1em;
+        font-weight: bold;
     }
     
-    h1 span{
-        color: #f0563d;
-    }
-
-    #photo-header{
-        text-align: center;
-        border-bottom-color: #353434;
-        border-bottom-width: 5px;
-        border-bottom-style: double;
-    }
-
-    #photo img{
-        background-color: #3f43aa; 
-        width:  120px;
-        height: 120px;
-        border-radius: 50%;       
-    }
-
-    .container{
-        max-width: 800px;
-        background: #ffffff;
-        margin-top: 80px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-    }
-    
-    .menu ul{
-        text-align: center;
-        margin: auto; padding: 0%;
-        list-style-type: none;
-    }
-
-    .menu ul li{
-        display: inline-block;
+    .education .description {
+        background: #EEEEEE;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 10px;
+        margin-bottom: 10px;
         position: relative;
+        box-sizing: border-box; 
     }
-    
-    .menu ul li a{
-        background: #363636;
-        color: #ffffff;
-        font-size: 10px;
-        text-decoration: none;
-        display: block;
-        padding: 3px;
+
+    .education .description h3, .education .description p{
+        margin-top: 0;
+        margin-bottom: 0;
     }
+    .education .description p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid transparent ;
+        border-right: 8px solid #EEEEEE ;
+        top: 5px;
+        left: -16px;
+    }
+.experience .job .where{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.year{
+    font-size: 0.8em;
+}
+
+.profesion{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2em;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.description{
+    margin-top: 0;
+    margin-left: 2em;
+    text-align: justify;
+}
+
+.containerskill[data-percent = "80"]{
+    width: 100%;
+    background-color: #DDDDDD;
+}
+
+.skillls{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.css{width: 80%; background-color: #04AA6D;}
+.html{width: 80%; background-color: #2196f3;}
+.js{width: 80%; background-color: #F44336;}
+.java{width: 80%; background-color: #808080;}

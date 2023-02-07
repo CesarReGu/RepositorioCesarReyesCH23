@@ -19,62 +19,168 @@
                 </div>
             </div>
             <h1>Hola mi nombre es <span>Cesar Reyes</span> y este es mi resumen</h1>
-<!-- La etiqueta "nav" se utiliza para definir una sección de enlaces de navegación -->
-<nav class="menu">
-    <!-- Una lista sin ordenar para los elementos principales del menú de navegación -->
-    <ul>
-        <!-- Primer elemento principal -->
-        <li> <a href="">Item1</a>
-            <!-- Lista sin ordenar para los subelementos de Item1 -->
-            <ul>
-                <!-- Subelementos de Item1 -->
-                <li><a href="#"> Sub-item1</a></li>
-                <li><a href="#"> Sub-item2</a></li>
-                <li><a href="#"> Sub-item3</a></li>
-            </ul>
-        </li>
-        <!-- Segundo elemento principal -->
-        <li> <a href="#">Item2</a>
-            <!-- Lista sin ordenar para los subelementos de Item2 -->
-            <ul>
-                <!-- Subelementos de Item2 -->
-                <li><a href="#"> Sub-item1</a></li>
-                <li><a href="#"> Sub-item2</a></li>
-                <li><a href="#"> Sub-item3</a></li>
-            </ul>
-        </li>
-        <!-- Tercer elemento principal -->
-        <li> <a href="#">Item3</a>
-            <!-- Lista sin ordenar para los subelementos de Item3 -->
-            <ul>
-                <!-- Subelementos de Item3 -->
-                <li><a href="#"> Sub-item1</a></li>
-                <li><a href="#"> Sub-item2</a></li>
-                <li><a href="#"> Sub-item3</a></li>
-            </ul>
-        </li>
-        <!-- Cuarto elemento principal -->
-        <li> <a href="#">Item4</a>
-            <!-- Lista sin ordenar para los subelementos de Item4 -->
-            <ul>
-                <!-- Subelementos de Item4 -->
-                <li><a href="#"> Sub-item1</a></li>
-                <li><a href="#"> Sub-item2</a></li>
-                <li><a href="#"> Sub-item3</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-<!-- Etiqueta de cierre para la sección de encabezado -->
+            <!-- La etiqueta "nav" se utiliza para definir una sección de enlaces de navegación -->
+            <nav class="menu">
+                <!-- Una lista sin ordenar para los elementos principales del menú de navegación -->
+                <ul>
+                    <!-- Primer elemento principal -->
+                    <li> <a href="">Item1</a>
+                        <!-- Lista sin ordenar para los subelementos de Item1 -->
+                        <ul>
+                            <!-- Subelementos de Item1 -->
+                            <li><a href="#"> Sub-item1</a></li>
+                            <li><a href="#"> Sub-item2</a></li>
+                            <li><a href="#"> Sub-item3</a></li>
+                        </ul>
+                    </li>
+                    <!-- Segundo elemento principal -->
+                    <li> <a href="#">Item2</a>
+                        <!-- Lista sin ordenar para los subelementos de Item2 -->
+                        <ul>
+                            <!-- Subelementos de Item2 -->
+                            <li><a href="#"> Sub-item1</a></li>
+                            <li><a href="#"> Sub-item2</a></li>
+                            <li><a href="#"> Sub-item3</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tercer elemento principal -->
+                    <li> <a href="#">Item3</a>
+                        <!-- Lista sin ordenar para los subelementos de Item3 -->
+                        <ul>
+                            <!-- Subelementos de Item3 -->
+                            <li><a href="#"> Sub-item1</a></li>
+                            <li><a href="#"> Sub-item2</a></li>
+                            <li><a href="#"> Sub-item3</a></li>
+                        </ul>
+                    </li>
+                    <!-- Cuarto elemento principal -->
+                    <li> <a href="#">Item4</a>
+                        <!-- Lista sin ordenar para los subelementos de Item4 -->
+                        <ul>
+                            <!-- Subelementos de Item4 -->
+                            <li><a href="#"> Sub-item1</a></li>
+                            <li><a href="#"> Sub-item2</a></li>
+                            <li><a href="#"> Sub-item3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Etiqueta de cierre para la sección de encabezado -->
         </header>
 
-        <section>
+        <section class="row clearfix">
+            <div class="pull-left col-60 ">
+                <div class="row">
+                    <article>
+                        <h2>Acerca de</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea optio cumque iusto, consectetur
+                            exercitationem architecto omnis obcaecati molestiae quam alias impedit voluptate et
+                            excepturi nisi expedita totam distinctio temporibus similique.</p>
+                    </article>
+                    <!-- quitar el div -->
+                    <!-- quitar el div -->
 
-        </section>
+                    <article class="education">
+                        <h2 class="col-10">Educación</h2>
+                        <ul>
+                            <li>
+                                <!-- <div class="containerflex"> -->
 
-        <footer>
+                                <div class="pull-left col-10">2012</div>
+                                <div class="pull-left col-90 description">
+                                    <h3>Nací en Sinaloa, México</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et magni voluptate
+                                        consectetur eligendi numquam consequatur iste quia architecto, consequuntur
+                                        impedit fuga quis quidem nisi enim amet ducimus laborum corrupti.</p>
+                                </div>
 
-        </footer>
+                                <!-- </div> -->
+                            </li>
+
+                            <li>
+                                <!-- <div class="containerflex"> -->
+
+                                <div class="col-10 pull-left">1986</div>
+                                <div class="pull-left col-90 description">
+                                    <h3>Nací en Sinaloa, México</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum officia sed
+                                        adipisci temporibus dolorem, sequi natus hic, mollitia possimus dignissimos quae
+                                        culpa, repellat fuga explicabo ipsa magnam aperiam asperiores dolor?</p>
+                                </div>
+
+                                <!-- </div> -->
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- /**********************Experiencia*****************************/ -->
+
+                    <article>
+                        <h2>Experiencia</h2>
+                        <div class="job clearfix">
+                        <div class="pull-left col-10" >
+                            <div class="where">Google</div>
+                            <div class="year">2013-2016</div>
+                        </div>
+                        <div class="pull-left col-90">
+                            <h3 class="profesion">Javascript</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum officia sed
+                                adipisci temporibus dolorem, sequi natus hic, mollitia possimus dignissimos quae
+                                culpa, repellat fuga explicabo ipsa magnam aperiam asperiores dolor?</p>
+                        </div>
+
+                    
+                        <br>
+    
+                        <div class="pull-left col-10">
+                            <div class ="where">Google</div>
+                            <div class="year">2011-2012</div>
+                        </div>
+                        <div class="pull-left col-80">
+                        <h3 class = "profesion">FrontEnd</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum officia sed
+                            adipisci temporibus dolorem, sequi natus hic, mollitia possimus dignissimos quae
+                            culpa, repellat fuga explicabo ipsa magnam aperiam asperiores dolor?</p>
+ 
+                </div>
+                </article>
+            </div>
+    </div>
+
+<div>
+    <div>
+        <h2>Contacto</h2>
+        <ul>
+            <li><strong>Email:</strong> cesaromar.reyesgut@gmail.com</li>
+            <li><strong>Discord:</strong> CesarReyes</li>
+            <li><strong>Twitter:</strong> @CesarReyes</li>
+            <li><strong>Facebook:</strong> /CesarReyes </li>
+        </ul>
+      
+        <h2>Skills</h2>
+       <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>JAVA</li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- /*****40****/ -->
+
+    </section>
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
     </div>
 </body>
 
