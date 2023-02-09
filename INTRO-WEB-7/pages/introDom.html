@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom y Js</title>
+    <!--Aqui declaramos el document -->
+    <script>
+        function miFuncion() {
+            document.write("Hola soy el dom<br>")
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Hola DOM</h1>
+<!--Aqui la usamos-->
+    <script>
+        miFuncion();
+    </script>
+<!--Aqui usamos el boton-->
+<button onclick="evento()">Click aqui</button>
+    <script src="../JS/domJS.js"></script>
+
+<!--Ejercicio 1-->
+<p id="saludo">Hola</p>
+<button id="cambiar-nombre-button">Cambiar el nombre!</button>
+
+<script>
+  // Selecciona el elemento p con id "saludo"
+  const elementoSaludo = document.getElementById("saludo");
+  
+  // Selecciona el elemento button con id "cambiar-nombre-button"
+  const botonCambiarNombre = document.getElementById("cambiar-nombre-button");
+  
+  // Añade un evento "click" al botón "cambiar-nombre-button"
+  botonCambiarNombre.addEventListener("click", function() {
+    // Muestra un prompt para que el usuario introduzca su nombre
+    const nombre = prompt("¿Cuál es tu nombre?");
+    
+    // Cambia el contenido del elemento "saludo" para incluir el nombre introducido
+    elementoSaludo.textContent = `Hola ${nombre}`;
+  });
+</script>
+<!--Fin de Ejercicio 1-->
+
+</body>
+
+</html>

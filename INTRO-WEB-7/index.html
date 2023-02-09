@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos JS para la web (INTRO-WEB-7)</title>
+<!--Script para poner en consola hola mundo-->
+    <script>
+        function saludar() {
+            console.log("Hola mundo JS desde VScode")
+        }
+    </script>
+<!--Script que suma dos numeros-->
+    <script>
+        function sumar(v1, v2 = 3) {
+            return (v1 + v2);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Javascript</h1>
+
+    <!--Aqui llamamos los scripts que pusimos arriba-->
+
+<script>
+        saludar();
+        console.log(sumar(1,40));
+    </script>
+<!--Prompt para pedir datos, funcion para imprimirlo-->
+
+<script>
+    let nombre= prompt("Cual es tu nombre");
+    function llamaNombre(){
+         alert("Que onda " + nombre)
+    }
+</script>
+
+<!--Pa llamar el nombre-->
+<script>
+    llamaNombre(nombre);
+
+</script>
+
+<script src="../INTRO-WEB-7/JS/tipodedatosyvariables.js"></script>
+<script src="../INTRO-WEB-7/JS/HorasCoste.js"></script>
+
+</body>
+
+</html>
