@@ -1,4 +1,11 @@
 let lista = [12,5,80,34,7];
+
+let lNueva = lista.map(
+    function(valor){
+        return valor *2
+    }
+);
+
 lista.sort(
     function(valor1,valor2){
         return valor1 > valor2
