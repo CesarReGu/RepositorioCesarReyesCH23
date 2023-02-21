@@ -33,3 +33,4 @@ console.log(Obj3.sumar(Obj3.numero0,Obj3.numero1));
 // Creamos una instancia con argumentos proporcionados y llamamos al método sumar con argumentos proporcionados
 let Obj4 = new OperacionesAritmeticas(8,6);
 console.log("---> " + Obj4.sumar(Obj4.numero0,Obj4.numero1));
+
